@@ -1,0 +1,134 @@
+/* Estlização Geral */
+* {
+  margin: 0;
+}
+
+/* Estilizando HTML e BODY juntos */
+html,
+body {
+  /* Variáveis p/ Cores */
+  --gray: hsl(240, 9%, 89%);
+  --black: hsl(240, 6%, 13%);
+
+  /* Configurando a Altura em 100% */
+  height: 100%;
+  /* Fontes da Página */
+  font-family: 'Roboto', sans-serif;
+  /* Suavização da Fonte */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Estilizando o Corpo da Página */
+body {
+  /* Colocando o Display no Modo "grid" */
+  display: grid;
+  /* Colocando Todos os itens da Página de Forma Centralizada */
+  place-items: center;
+  /* Colocando uma Cor de Fundo na Página */
+}
+
+/* Estilizando a Caixa Geral */
+main {
+  /* Colocando uma Imagem de Fundo */
+  background: url(images/background.svg);
+  /* Setando a Largura */
+  width: 375px;
+  /* Setando a Altura */
+  height: 812px;
+  /* Setando a Cor utlizada */
+  color: var(--gray);
+}
+
+/* Estilizando a Caixa Principal */
+.container {
+  /* Setando uma Largura Máxima de 250 Pixels p/ a Caixa Principal */
+  max-width: 250px;
+  /* Setando a Margem Esquerda em Automático p/ Centralizar a Caixa Principal */
+  margin-left: auto;
+  /* Setando a Margem Direita em Automático p/ Centralizar a Caixa Principal */
+  margin-right: auto;
+  /* Setando a Caixa Principal de Forma Central */
+  text-align: center;
+}
+
+/* Estilizando a Caixa de Foto Pessoal e Selo da RocektSeat */
+.avatar {
+  /* Setando a Largura */
+  width: 10rem;
+  /* Setando a Margem em Relação à parte de cima (11.5rem), Laterais ("auto" p/ Centralizar) e Na parte de Baixo (0) */
+  margin: 11.5rem auto 0;
+  /* Setando a Posição */
+  position: relative;
+}
+
+/* Estilzando o Selo da RocektSeat */
+.avatar span {
+  /* Setando a Posição */
+  position: absolute;
+  /* Setando o Recuo p/ Cima */
+  top: -15px;
+  /* Setando a Ordem de Exibição p/ que Apareça em Cima da Foto Pessoal, pq a Formatação da Imagem em Formato Hexagonal retira a referência p/ o Recuo p/ Cima */
+  z-index: 1;
+}
+
+/* Estilzando a Foto Pessoal */
+.avatar > img {
+  /* Setando a Largura */
+  width: 10rem;
+  /* Setando a Altura */
+  height: 11.5rem;
+  /* Preencimento da Imagem p/ Não ficar esticada */
+  object-fit: cover;
+  /* Formatando a Imagem em Formato Hexagonal */
+  clip-path: polygon(50% 1%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+/* Estilizando o "h1" da Página */
+h1 {
+  /* Colocando o Tamanho da Fonte do Texto de "h1" */
+  font-size: 1.5rem;
+  /* Setando o Espaço Entre a Caixa da Foto Pessoal e o Nome do Crachá */
+  margin-top: 1.5rem;
+  /* Colocando Cor no Texto de "h1" */
+}
+
+/* Estilizando o Link da Página */
+a {
+  /* Retirando a Formatação Inicial do Link */
+  text-decoration: none;
+  /* Colocando Cor no Link */
+  color: var(--gray);
+  /* Setando o Espaço Entre o Nome do Crachá e o Link do GitHub */
+  margin-top: 0.25rem;
+  /* Setando o Modo de Display p Alinhar o Íconde do GitHub e o Nome do Link p/ o GitHub um ao Lado do, na Mesma Linha */
+  display: flex;
+  /* Setando o Espaço Entre os Itens */
+  gap: 0.75rem;
+  /* Alinhar os Itens no Centro (Colocanto o CONTENT de Forma JUSTIFY)  */
+  justify-content: center;
+  /* Garantindo o Alinhamento Central dos Itens */
+  align-items: center;
+}
+
+/* Estilizando o Texto da Página */
+p {
+  /* Setando o Espaço Entre o Link do GitHub e o Texto da Página */
+  margin-top: 2rem;
+  /* Colocando Cor no Texto da Página */
+}
+
+/* Estilizando a Lista Não Ordenada de Links P/ Redes Sociais */
+ul {
+  /* Setando o Espaço Entre o Nome do Crachá e o Link do GitHub */
+  margin-top: 4rem;
+  /* Retirar a Formatação as Bolinhas da Formatação Inicial dos Itens da Lista */
+  list-style: none;
+  /* Setando o Preenchimento Interno */
+  padding: 0;
+  /* Setando o Modo de Display p Alinhar os Itens da Lista um ao Lado do na Mesma Linha */
+  display: flex;
+  /* Setando o Espaço Entre os Itens */
+  gap: 0.5rem;
+  /* Alinhar os Itens no Centro (Colocanto o CONTENT de Forma JUSTIFY)  */
+  justify-content: center;
+}
