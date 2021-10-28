@@ -136,7 +136,7 @@ ul {
 }
 
 /*  Media Queries */
-@media (max-width: 215px) {
+@media (max-width: 250px) {
   ul {
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
