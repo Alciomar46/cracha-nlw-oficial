@@ -40,7 +40,7 @@ function getGitHubProfileInfos() {
     .then(data => {
       // Usando o "ID" do Elemento e o Recurso "textContent", Troca-se o Conteúdo do Elemento Selecionado Pelo Dado Escolhido do GitHub
       nameProfile.textContent = data.name
-      bioProfile.textContent = data.bio
+      bioProfile.textContent = data.name
       linkProfile.href = data.html_url
       imageProfile.src = data.avatar_url
       loginProfile.textContent = data.login
