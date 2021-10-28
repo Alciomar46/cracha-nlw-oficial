@@ -136,7 +136,7 @@ ul {
 }
 
 /*  Media Queries */
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
   ul {
     flex-direction: column;
   }
