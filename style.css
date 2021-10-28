@@ -134,3 +134,11 @@ ul {
   /* Alinhar os Itens no Centro (Colocanto o CONTENT de Forma JUSTIFY)  */
   justify-content: center;
 }
+
+/*  Media Queries */
+@media (max-width: 215px) {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
